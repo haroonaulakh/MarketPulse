@@ -1,1 +1,1 @@
-# MarketPulse — AWS + Databricks track
+# MarketPulse (AWS + Databricks)
