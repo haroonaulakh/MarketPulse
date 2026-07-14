@@ -1,8 +1,49 @@
-.env 
-venv/ 
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+
+# Python
 __pycache__/
 *.pyc
-.terraform/ 
-terraform.tfstate 
-terraform.tfstate.backup 
-*.tfvars
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Databricks
+.databricks/
+databricks.yml.local
+
+# dbt
+dbt/marketpulse_dbt/target/
+dbt/marketpulse_dbt/dbt_packages/
+dbt/marketpulse_dbt/logs/
+
+# Great Expectations
+great_expectations/uncommitted/
+
+# Airflow
+airflow/logs/
+airflow/*.db
+airflow/airflow.cfg
+
+# ML artifacts
+ml/mlruns/
+ml/*.pkl
+ml/*.joblib
+*.model
+
+# OS / editor junk
+.DS_Store
+.vscode/
+.idea/
