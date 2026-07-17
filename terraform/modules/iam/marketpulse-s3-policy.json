@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "MarketPulseS3ReadWrite",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject", "s3:GetObject", "s3:ListBucket"],
+      "Resource": [
+        "arn:aws:s3:::marketpulse-raw-haroonalk", "arn:aws:s3:::marketpulse-raw-haroonalk/*",
+        "arn:aws:s3:::marketpulse-bronze-haroonalk", "arn:aws:s3:::marketpulse-bronze-haroonalk/*",
+        "arn:aws:s3:::marketpulse-silver-haroonalk", "arn:aws:s3:::marketpulse-silver-haroonalk/*",
+        "arn:aws:s3:::marketpulse-gold-haroonalk", "arn:aws:s3:::marketpulse-gold-haroonalk/*",
+        "arn:aws:s3:::marketpulse-artifacts-haroonalk", "arn:aws:s3:::marketpulse-artifacts-haroonalk/*"
+      ]
+    }
+  ]
+}
